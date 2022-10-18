@@ -32,7 +32,7 @@
 
                     </li>
                     @else
-                    <li><a href="registro">Registro</a> </li>
+                    <li><a href="create">Registro</a> </li>
                     <li><a href="login">Iniciar Sessión</a> </li>
                     @endauth
                 </ul>

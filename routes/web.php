@@ -1,8 +1,6 @@
 <?php
 
-use Dotenv\Exception\ValidationException;
 use App\Http\Controllers\Auth\LoguinController;
-
 use Illuminate\Support\Facades\Route;
 
 
@@ -28,15 +26,20 @@ Route::get('contacto', function () {
 
 Route::view('login','pages.login')->name('login')->middleware('guest');
 
+Route::resource('usuarios_reg' , 'App\http\Controllers\UserController');
 
-Route::get('registro', function () {
-    return view('pages.registro');
-});
+Route::get( uri: 'create', action:[App\http\Controllers\UserController::class, 'create']);
 
+Route::post( uri: 'store', action:[App\http\Controllers\UserController::class, 'store'])->name( name: 'pages.store');
 
+Route::get( uri: 'edit {user}', action:[App\http\Controllers\UserController::class, 'edit'])->name( name: 'pages.edit');
 
-Route::view('usuarios_reg' , 'pages.usuarios_reg') ->middleware('auth');
+Route::put( uri: '{user}', action:[App\http\Controllers\UserController::class, 'update'])->name( name: 'pages.update');
+
+Route::delete( uri: '{user}', action:[App\http\Controllers\UserController::class, 'destroy'])->name( name: 'pages.destroy');
 
 Route::post('login', [LoguinController::class, 'login']);
 
 Route::get('salir', [LoguinController::class, 'logout']);
+
+Route::post( uri: 'contacto', action:[App\http\Controllers\ClienteController::class, 'store'])->name( name: 'pages.contacto');

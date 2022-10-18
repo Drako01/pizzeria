@@ -236,6 +236,10 @@ table thead tr{
     cursor: pointer;
 }
 
+.hidden{
+    display: none;
+}
+
 /* Mapa */
 
 .mapa{
