@@ -54,6 +54,7 @@
         @yield('contenido')
 
         <footer>
+            <p style="font-size: 20px; font-weight:bold">Creado en Laravel 9</p>
             <p>&COPY; Alejandro Di Stefano - Nivel Avanzado de PHP y MySQL</p>
         </footer>
         <!-- Compiled and minified JavaScript -->
