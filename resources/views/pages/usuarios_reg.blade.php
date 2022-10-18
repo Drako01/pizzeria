@@ -14,9 +14,9 @@
 @endif
 <div class="button-field">
     <a href="create">
-    <button class="boton" >
-        Crear Usuario
-    </button>
+        <button class="boton">
+            Crear Usuario
+        </button>
     </a>
 </div>
 <div class="users">
@@ -48,8 +48,8 @@
                     <td><a href="{{ route('pages.edit', $user->id) }}"><img src="../img/edit.png"></a></td>
                     <td>
                         <form method="POST" action="{{ route('pages.destroy', $user->id) }}">
-                        @csrf
-                        @method('DELETE')
+                            @csrf
+                            @method('DELETE')
                             <input type="hidden" name="destroy">
                             <button type="submit" class="hidden_btn" onclick="return eliminar_cont()"><img src="../img/trash.png"></button>
                         </form>
