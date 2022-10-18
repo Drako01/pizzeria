@@ -12,6 +12,13 @@
     </div>
 </div>
 @endif
+<div class="button-field">
+    <a href="create">
+    <button class="boton" >
+        Crear Usuario
+    </button>
+    </a>
+</div>
 <div class="users">
     <div class="usuarios_reg">
 
