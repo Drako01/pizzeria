@@ -1,5 +1,12 @@
 ## Alejandro Daniel Di Stefano - PHP Avanzado con Laravel
 
+* Se implemento un Sistema de Logueo con CRUD
+* Se aplico el MVC con las herramientas de Laravel
+* Se implementaron variables session para administrar el contenido que pueden ver los usuarios registrados
+* Se implemento el manejo de excepciones
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
