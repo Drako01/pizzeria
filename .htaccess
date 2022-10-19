@@ -1,0 +1,2 @@
+PHP Fatal error:  require(): Failed opening required '/app/public/vendor/autoload.php'
+(include_path='.:/app/.heroku/php/lib/php') in /app/public/index.php on line 24
